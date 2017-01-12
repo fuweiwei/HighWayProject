@@ -1,0 +1,2 @@
+# HighWayProject
+高速公路管理项目大部分使用Android5.0的Material DesignUI风格，以及使用percent百分比适配UI
