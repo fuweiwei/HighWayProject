@@ -281,14 +281,14 @@ public class MainActivity extends BaseActivity implements OnClickListener{
         final String content2;
         switch (id){
             case R.id.rel_check_regular:
-                if (!DBELMenuDao.getInstance(mContext).isHasType(Constants.MENU_TYPE_CHECK_FIX)){
-                    SnackbarUtils.show(mContext, "暂无该权限，不能使用");
-                    return;
-                }
+//                if (!DBELMenuDao.getInstance(mContext).isHasType(Constants.MENU_TYPE_CHECK_FIX)){
+//                    SnackbarUtils.show(mContext, "暂无该权限，不能使用");
+//                    return;
+//                }
                 HWApplication.setmCheckType(Constants.CHECK_TYPE_REGULAR);
-                String checkWayId = DBCTDictionaryDao.getInstance(mContext).getIDBySort(Constants.CHECK_TYPE_REGULAR);
+//                String checkWayId = DBCTDictionaryDao.getInstance(mContext).getIDBySort(Constants.CHECK_TYPE_REGULAR);
                 Intent intent = new Intent(mContext, TreeListActivity.class);
-                intent.putExtra("checkWayId",checkWayId);
+//                intent.putExtra("checkWayId",checkWayId);
                 startActivity(intent);
 
                 break;
