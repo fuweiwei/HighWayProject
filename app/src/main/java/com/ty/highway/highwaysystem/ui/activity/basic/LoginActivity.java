@@ -408,30 +408,32 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                             startActivity(intent);
                             return;
-                        }
-                        if(CommonUtils.isNetworkConnected(mContext)){
-                            showSpotsDialog("正在登录...", false);
-                            login();
                         }else{
-                            String name = mTnlUsername.getEditText().getText().toString();
-                            String password  = mTnlPassword.getEditText().getText().toString();
-                            if(TextUtils.isEmpty(name)||TextUtils.isEmpty(password)){
-                                SnackbarUtils.show(mContext, "请输入用户密码");
-                                return;
-                            }
-                            PAccountBean info = DBPAccountDao.getInstance(mContext).getInfo(name);
-                            if("1".equals(info.getIssave())&&password.equals(info.getPassword())){
-                                CTUserBean userBean = DBCTUserDao.getInstance(mContext).getPUserInfo(info.getName());
-                                HWApplication.userBean = userBean;
-                                PreferencesUtils.putString(mContext, Constants.SP_LOGIN_KEY, userBean.getLegalizeKey());
-                                PreferencesUtils.putString(mContext, Constants.SP_USER_ID, userBean.getUserID());
-                                PreferencesUtils.putString(mContext, Constants.SP_DPT_ID, userBean.getDptId());
-                                Intent intent = new Intent(mContext, MainActivity.class);
-                                startActivity(intent);
-                            }else{
-                                SnackbarUtils.show(mContext, "没有网络连接，无法登录");
-                            }
+
                         }
+//                        if(CommonUtils.isNetworkConnected(mContext)){
+//                            showSpotsDialog("正在登录...", false);
+//                            login();
+//                        }else{
+//                            String name = mTnlUsername.getEditText().getText().toString();
+//                            String password  = mTnlPassword.getEditText().getText().toString();
+//                            if(TextUtils.isEmpty(name)||TextUtils.isEmpty(password)){
+//                                SnackbarUtils.show(mContext, "请输入用户密码");
+//                                return;
+//                            }
+//                            PAccountBean info = DBPAccountDao.getInstance(mContext).getInfo(name);
+//                            if("1".equals(info.getIssave())&&password.equals(info.getPassword())){
+//                                CTUserBean userBean = DBCTUserDao.getInstance(mContext).getPUserInfo(info.getName());
+//                                HWApplication.userBean = userBean;
+//                                PreferencesUtils.putString(mContext, Constants.SP_LOGIN_KEY, userBean.getLegalizeKey());
+//                                PreferencesUtils.putString(mContext, Constants.SP_USER_ID, userBean.getUserID());
+//                                PreferencesUtils.putString(mContext, Constants.SP_DPT_ID, userBean.getDptId());
+//                                Intent intent = new Intent(mContext, MainActivity.class);
+//                                startActivity(intent);
+//                            }else{
+//                                SnackbarUtils.show(mContext, "没有网络连接，无法登录");
+//                            }
+//                        }
                     }
                 }
 

@@ -33,6 +33,7 @@ import com.ty.highway.highwaysystem.support.utils.FileUtils;
 import com.ty.highway.highwaysystem.support.utils.PreferencesUtils;
 import com.ty.highway.highwaysystem.support.utils.SnackbarUtils;
 import com.ty.highway.highwaysystem.support.utils.ToastUtils;
+import com.ty.highway.highwaysystem.ui.activity.check.TaskListActivity;
 import com.ty.highway.highwaysystem.ui.activity.check.TreeListActivity;
 import com.ty.highway.highwaysystem.ui.activity.machine.MachineTreeListActivity;
 
@@ -287,7 +288,7 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 //                }
                 HWApplication.setmCheckType(Constants.CHECK_TYPE_REGULAR);
 //                String checkWayId = DBCTDictionaryDao.getInstance(mContext).getIDBySort(Constants.CHECK_TYPE_REGULAR);
-                Intent intent = new Intent(mContext, TreeListActivity.class);
+                Intent intent = new Intent(mContext, TaskListActivity.class);
 //                intent.putExtra("checkWayId",checkWayId);
                 startActivity(intent);
 
