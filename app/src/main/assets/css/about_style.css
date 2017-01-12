@@ -1,0 +1,37 @@
+/* CSS Document */
+body{margin:0px; padding:0px; font-family:"Î¢ÈíÑÅºÚ"; color:#202020; height:100%;}
+
+.large_border{width:1024px; height:900px;background-color:#dadce2; margin:0px; padding:0px;}
+
+.tongyan_info{width:945px; height:112px; padding-top:35px;}
+
+.left_bar{background:url(../images/left_bar.jpg); width:8px; height:112px; float:left;}
+
+.mid_bar{background:url(../images/mid_bar.jpg); width:929px; height:112px; float:left;}
+
+.right_bar{background:url(../images/right_bar.jpg); width:8px; height:112px; float:left;}
+
+.tongyan_table{margin-top:8px; margin-left:8px; font-size:14px;}
+
+.tongyan_css{font-size:18px;}
+
+.big_css{width:945px; height:100px; margin-top:35px; font-size:16px; text-align:left;text-indent:2em;line-height:27px;}
+
+.image_bar{width:945px; height:180px; margin-top:20px;}
+
+.tongji_image{background:url(../images/tongji_image.jpg); width:300px; height:178px; border:1px solid #888888; float:left;}
+
+.three_dimensional_image{background:url(../images/three_dimensional_image.jpg); width:300px; height:178px; border:1px solid #888888; float:left; margin-left:18px;}
+
+.three_dimensional_image_1{background:url(../images/three_dimensional_image_1.jpg); width:300px; height:178px; border:1px solid #888888; float:left;margin-left:18px;}
+
+.text_css{margin-top:20px;}
+
+.image_bar_1{width:945px; height:225px; margin-top:20px;}
+
+.text_width{width:300px; margin-top:-5px; float:left;text-align:left;}
+
+.three_dimensional_image_2{background:url(../images/three_dimensional_image_2.jpg); width:300px; height:225px; border:1px solid #888888; float:left; margin-left:18px;}
+
+.color_image{background:url(../images/color_image.jpg); width:300px; height:225px; border:1px solid #888888; float:left; margin-left:18px;}
+

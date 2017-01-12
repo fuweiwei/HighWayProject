@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg_color"
+        app:layout_heightPercent="8%"
+        >
+
+</com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

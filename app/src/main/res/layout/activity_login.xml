@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg_color"
+        app:layout_heightPercent="35%"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            app:layout_marginTopPercent="5%"
+            app:layout_textSizePercent="7%" />
+        <ImageView
+            android:layout_width="wrap_content"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:src="@drawable/icon_login"/>
+
+    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="8%"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:orientation="vertical" >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/login_userName_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/login_password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:password="true"
+                    >
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/BaseButBgStyle"
+                android:layout_width="match_parent"
+                app:layout_heightPercent="10%"
+                android:layout_marginTop="@dimen/common_margin"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/login_btn"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_theme_color"
+                    android:textSize="18sp"
+                    android:text="登  录"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin"
+                app:layout_heightPercent="7%"
+                >
+                <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/login_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/myCheckBox"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        app:layout_textSizePercent="55%"
+                        android:text="记住密码"
+                        />
+                </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/BaseButBgStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:layout_widthPercent="10%"
+                    app:layout_marginRightPercent="2%"
+                    android:layout_height="match_parent">
+                    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/activity_login_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="55%"
+                            android:text="更多"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/common_theme_color"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/common_theme_color"
+                            android:layout_marginTop="2dp"
+                            android:layout_height="1.0dp"/>
+                    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+        <TextView
+            android:id="@+id/txtDeviceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

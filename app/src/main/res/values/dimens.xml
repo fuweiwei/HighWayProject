@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="common_spot_size">6dp</dimen>
+    <dimen name="common_selectbut_size">15dp</dimen>
+    <dimen name="common_margin">10dp</dimen>
+    <dimen name="common_spinner_height">35dp</dimen>
+    <dimen name="common_progress_margin">24dp</dimen>
+    <dimen name="common_progress_width">250dp</dimen>
+</resources>

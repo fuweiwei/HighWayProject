@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="50%"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:layout_textSizePercent="20%"
+        android:textColor="@color/black"
+        android:text="@string/loading"/>
+
+    <com.ty.highway.highwaysystem.ui.widget.sportsdialog.ProgressLayout
+        android:id="@+id/progress"
+        app:layout_widthPercent="70%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"/>
+
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

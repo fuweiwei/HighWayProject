@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_heightPercent="35%"
+        app:layout_widthPercent="55%">
+
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="40%"
+                android:text="日期:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/checkdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="40%"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:hint="请开始检查选择日期"
+                android:background="@drawable/et_bg"
+                android:textColor="@color/black" />
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气:"
+                app:layout_textSizePercent="40%"
+                android:textColor="@color/black" />
+            <com.ty.highway.highwaysystem.ui.widget.MSpinner
+                android:id="@+id/spinner_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_margin"
+                app:layout_textSizePercent="40%"
+                android:background="@drawable/et_bg"
+                android:dropDownVerticalOffset="3dp">
+
+            </com.ty.highway.highwaysystem.ui.widget.MSpinner>
+
+
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkboxWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_textSizePercent="15%"
+                style="@style/myCheckBox"
+                android:text="自定义天气"
+                android:textColor="@color/black"
+                android:checked="false" />
+
+            <EditText
+                android:id="@+id/inputWeather"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/common_margin"
+                android:layout_height="match_parent"
+                app:layout_textSizePercent="15%"
+                android:background="@drawable/et_bg_unclick"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black" />
+
+
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/BaseButBgStyle"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/common_margin"
+                >
+                <Button
+                    android:id="@+id/btnEnterCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_theme_color"
+                    android:text="进入检查"
+                    android:textColor="@color/white"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+
+</com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>

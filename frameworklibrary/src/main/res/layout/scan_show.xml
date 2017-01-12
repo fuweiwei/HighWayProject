@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:id="@+id/scan_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="扫描结果"
+        android:textColor="#FFFFFF"
+        android:background="@color/common_theme_color"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_title"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/common_theme_color"/>
+        <Button
+            android:id="@+id/go_on_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="重新扫描"
+            android:background="@drawable/common_click_btn_selector"
+            android:textColor="@color/common_theme_color"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="返回主页"
+            android:background="@drawable/common_click_btn_selector"
+            android:textColor="@color/common_theme_color"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/open_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_click_btn_selector"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:text="进入检修"
+            android:textColor="@color/common_theme_color"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/common_theme_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="mDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">@color/common_theme_color</item>
+        <item name="progress_text_size">15sp</item>
+        <item name="progress_text_color">@color/common_theme_color</item>
+
+        <item name="progress_reached_bar_height">3dp</item>
+        <item name="progress_unreached_bar_height">1.5dp</item>
+    </style>
+    <style name="BaseButBgStyle">
+        <!--item name="rv_type">rectangle</item >
+        <item name="rv_zoom">true</item>-->
+        <item name="mrl_rippleColor">@color/common_but_bg_color</item>
+        <item name="mrl_rippleOverlay">true</item>
+    </style>
+    <style name="BaseListItemStyle">
+        <!--item name="rv_type">rectangle</item >
+        <item name="rv_zoom">true</item>-->
+        <item name="mrl_rippleColor">@color/common_theme_color</item>
+        <item name="mrl_rippleOverlay">true</item>
+    </style>
+    <style name="SpotsDialogDefault" parent="@android:style/Theme.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">正在加载…</item>
+        <item name="DialogSpotCount">5</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="myCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+    <style name="TextScroll">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+</resources>

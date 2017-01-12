@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/adapter_machine_damage_item_mrl"
+        style="@style/BaseListItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/common_margin"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:id="@+id/adapter_machine_damage_item_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_textSizePercent="20%"
+                        android:textColor="@color/black"
+                        android:text="破损"/>
+                    <TextView
+                        android:id="@+id/adapter_machine_damage_item_judge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:layout_textSizePercent="16%"
+                        android:layout_marginTop="10dp"
+                        android:text="严重"/>
+
+                </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+            </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/adapter_machine_damage_item_isuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_centerVertical="true"
+                android:textColor="@color/common_theme_color"
+                android:layout_marginTop="5dp"
+                app:layout_textSizePercent="16%"
+                android:text="未使用"/>
+        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>

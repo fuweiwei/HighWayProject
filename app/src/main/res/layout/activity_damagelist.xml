@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+        <include
+            layout="@layout/common_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/activity_damagelist_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/common_theme_color"
+                app:tabSelectedTextColor="@color/common_theme_color"
+                app:tabGravity="fill"
+                app:tabTextColor="@android:color/black"></android.support.design.widget.TabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/activity_damagelist_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+        <Button
+            android:id="@+id/activity_damagelist_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_widthPercent="6%"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="2.4%"
+            android:drawableBottom="@drawable/icon_next"
+            android:text="检查项"
+            android:background="@drawable/ic_check_bg"/>
+    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:id="@+id/left"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@android:color/white">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/activity_checklist">
+        </include>
+
+    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

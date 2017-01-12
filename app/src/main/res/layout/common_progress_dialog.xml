@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="80%"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="25%"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/common_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="提示"
+                android:textColor="@color/black"
+                app:layout_textSizePercent="45%" />
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/common_theme_color"/>
+        <TextView
+            android:id="@+id/common_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="基础数据下载中..."
+            app:layout_textSizePercent="8%" />
+
+        <com.ty.highway.highwaysystem.ui.widget.NumberProgressBar
+            android:id="@+id/common_dialog_progressBar"
+            style="@style/NumberProgressBar_Relax_Blue"
+            android:layout_margin="20dp" >
+        </com.ty.highway.highwaysystem.ui.widget.NumberProgressBar>
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

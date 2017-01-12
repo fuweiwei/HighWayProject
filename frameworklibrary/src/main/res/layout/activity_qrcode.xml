@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+       android:id="@+id/head_view"
+       android:layout_width="fill_parent"
+       android:layout_height="@dimen/head_height"
+       android:background="@color/light_yellow">         
+       <ImageView android:id="@+id/iv_back"
+            android:layout_width="@dimen/head_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:scaleType="center"           
+            android:padding="10dip"/>                             
+      <TextView android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"  
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/head_title_size"   
+            android:maxEms="8"
+            android:ellipsize="middle"
+            android:singleLine="true"        
+            android:textStyle="bold"
+            android:text="@string/title_qrcode"
+            android:layout_centerInParent="true"/>  
+      <View android:layout_width="match_parent"
+            android:layout_height="2dip"  
+            android:layout_toRightOf="@+id/iv_back"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/city_selected_dir"/>      
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/iv_qrcode_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:contentDescription="@string/title_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5sp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+</LinearLayout>

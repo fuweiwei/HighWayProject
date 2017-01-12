@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/common_titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="30%"
+            android:orientation="horizontal">
+
+            <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                    android:id="@+id/rel_check_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="60%"
+                    android:background="@drawable/common_main_btn"
+                    android:layout_height="wrap_content">
+                    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="65%"
+                        app:layout_widthPercent="65%"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_check_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/main_icon1"
+                            android:layout_centerInParent="true"
+                            />
+                        <FrameLayout
+                            android:id="@+id/button_regular_check_f"
+                            android:layout_width="wrap_content"
+                            android:padding="1dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/check_regular_num"
+                                android:layout_width="30dip"
+                                android:layout_height="15dip"
+                                android:background="@drawable/tips_textview_bg"
+                                android:gravity="center"
+                                android:text="9"
+                                android:visibility="visible"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white" />
+                        </FrameLayout>
+                    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        app:layout_marginPercent="3%"
+                        app:layout_textSizePercent="12%"
+                        android:textColor="@color/common_text_color"
+                        android:text="@string/menu_regular_check"/>
+
+                </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+            </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+            <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/rel_check_often"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="60%"
+                    android:background="@drawable/common_main_btn"
+                    android:layout_height="wrap_content">
+                    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="65%"
+                        app:layout_widthPercent="65%"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_check_often"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        />
+                        <FrameLayout
+                            android:id="@+id/button_often_check_f"
+                            android:padding="1dip"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/check_often_num"
+                                android:layout_width="30dip"
+                                android:layout_height="15dip"
+                                android:background="@drawable/tips_textview_bg"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="12sp"
+                                android:visibility="invisible"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white" />
+                        </FrameLayout>
+                        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        app:layout_marginPercent="3%"
+                        app:layout_textSizePercent="12%"
+                        android:textColor="@color/common_text_color"
+                        android:text="@string/menu_often_check"/>
+
+                </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+            </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+            <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent">
+                <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="60%"
+                    android:id="@+id/rel_machine_regular"
+                    android:background="@drawable/common_main_btn"
+                    android:layout_height="wrap_content">
+                    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="65%"
+                        app:layout_widthPercent="65%"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_machine_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        />
+                        <FrameLayout
+                            android:id="@+id/button_daily_check_f"
+                            android:padding="1dip"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/machine_regular_num"
+                                android:layout_width="30dip"
+                                android:layout_height="15dip"
+                                android:background="@drawable/tips_textview_bg"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textSize="12sp"
+                                android:visibility="invisible"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white" />
+                        </FrameLayout>
+                        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:layout_textSizePercent="12%"
+                        app:layout_marginPercent="3%"
+                        android:textColor="@color/common_text_color"
+                        android:text="@string/menu_machine_regular"/>
+
+                </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+            </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="30%"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                app:layout_widthPercent="33%"
+                android:layout_height="match_parent">
+                <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rel_machine_often"
+                    app:layout_heightPercent="60%"
+                    app:layout_widthPercent="60%"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/common_main_btn"
+                    android:layout_height="wrap_content">
+                    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="65%"
+                        app:layout_widthPercent="65%"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_machine_often"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <FrameLayout
+                            android:id="@+id/button_emergency_check_f"
+                            android:padding="1dip"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/machine_often_num"
+                                android:layout_width="30dip"
+                                android:layout_height="15dip"
+                                android:background="@drawable/tips_textview_bg"
+                                android:gravity="center"
+                                android:text="349"
+                                android:textSize="12sp"
+                                android:visibility="invisible"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white" />
+                        </FrameLayout>
+                    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        app:layout_marginPercent="3%"
+                        app:layout_textSizePercent="12%"
+                        android:textColor="@color/common_text_color"
+                        android:text="@string/menu_machine_often"/>
+
+                </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+            </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

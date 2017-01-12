@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical">
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg_color"
+        app:layout_heightPercent="8%"
+        >
+        <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:layout_heightPercent="60%">
+
+            <include
+                layout="@layout/common_menu_layout_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上传旧版数据"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="30%" />
+</com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+    <Button
+        android:id="@+id/btn_uploaddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="上传数据"/>
+    <Button
+        android:id="@+id/btn_uploadpic"
+        android:layout_below="@+id/btn_uploaddata"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="上传图片"/>
+</com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>

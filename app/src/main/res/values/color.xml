@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="red">#f00</drawable>
+    <drawable name="green">#0f0</drawable>
+    <drawable name="blue">#99CCFF</drawable>
+    <drawable name="gray">#ccc</drawable>
+    <drawable name="bjcolor">#BEBEBE</drawable>
+    <drawable name="hs">#99939f</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="eee">#eee</drawable>
+    <drawable name="maybehs">#E0E0E0</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="backgroundcolor">#C2E0F2</drawable>
+    <drawable name="textcolor">#FF000000</drawable>
+    <drawable name="trancolor">#00000000</drawable>
+    <drawable name="btnblue">#97fcfb</drawable>
+    <drawable name="common_theme_color">#257ae5</drawable>
+
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="yellow">#f9fa06</color>
+    <color name="common_list_bg">#eeeeee</color>
+    <color name="common_theme_color">#1a396d</color>
+    <color name="common_text_color">#0b0b0b</color>
+    <color name="main_bg_color">#eeeeee</color>
+    <color name="side_bg_color">#666666</color>
+    <color name="common_title_bg_color">#1a396d</color>
+    <color name="common_sub_bg_color">#68c4f8</color>
+    <color name="common_but_bg_color">#bef3fa</color>
+    <color name="listviewBackgroud">#EEEEEE</color>
+    <color name="transparent">#00000000</color>
+    <color name="listbgcolorhs">#8E8E8E</color>
+    <color name="login_bg_color">#0e97c5</color>
+    <color name="btnPressed">#68c4f8</color>
+    <color name="common_drak_grey">#dcdcdc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dialog_title_bg_color">#498cb6</color>
+    <color name="seting_light_black">#585c60</color>
+    <color name="btn_bg_color">#2786c8</color>
+    <color name="btn_bg_h_color">#0b57aa</color>
+    <color name="btn_bg_gray_color">#8E8E8E</color>
+    <color name="btn_bg_gray_h_color">#737373</color>
+    <color name="d_gary">#EAEAEE</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="drawer_scrim_color">#88eeeeee</color>
+
+</resources>

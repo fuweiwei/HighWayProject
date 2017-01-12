@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    >
+    <com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="92%"
+        android:orientation="vertical">
+        <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_title_bg_color"
+            app:layout_heightPercent="8%">
+            <TextView
+                android:id="@+id/activity_checklist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_marginLeftPercent="15%"
+                app:layout_marginRightPercent="15%"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="JD1111-夏蓉隧道-机电检修"
+                android:textColor="@color/white"
+                app:layout_textSizePercent="30%" />
+
+        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+        <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="8%">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="设备列表"
+                app:layout_textSizePercent="30%" />
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/BaseButBgStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="70%"
+                app:layout_widthPercent="30%"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+
+                <Button
+                    android:id="@+id/activity_checklist_checkbut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_theme_color"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:text="@string/check_record_table"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/common_theme_color"></View>
+        <ListView
+            android:id="@+id/activity_checklist_lv"
+            android:layout_width="match_parent"
+            android:divider="@color/common_theme_color"
+            android:dividerHeight="1dp"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>
+    <com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout
+        android:id="@+id/activity_checklist_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="8%"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/common_theme_color"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            style="@style/BaseButBgStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_margin"
+            app:layout_heightPercent="70%">
+
+            <Button
+                android:id="@+id/activity_checklist_finishcheck"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_theme_color"
+                android:text="完成检查"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </com.ty.highway.frameworklibrary.support.percent.PercentRelativeLayout>
+
+</com.ty.highway.frameworklibrary.support.percent.PercentLinearLayout>

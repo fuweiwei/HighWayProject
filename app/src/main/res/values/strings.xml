@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">贵州省公路隧道移动终端</string>
+    <string name="task_list">任务列表</string>
+    <string name="add_task">添加</string>
+    <string name="exit">退出</string>
+    <string name="back">返回</string>
+    <string name="add">添加</string>
+    <string name="next">下一步</string>
+    <string name="setting">设置</string>
+    <string name="ok">确定</string>
+
+
+
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="loading">正在加载...</string>
+
+    <!-- activity_main.xml-->
+    <string name="title_activity_main">菜单模块</string>
+    <string name="menu_check">土建检查</string>
+    <string name="menu_regular_check">土建定期检查</string>
+    <string name="menu_often_check">土建经常检查</string>
+    <string name="menu_machine">机电检修</string>
+    <string name="menu_machine_regular">机电定期检修</string>
+    <string name="menu_machine_often">机电经常检修</string>
+
+    <!-- activity_taskdetails.xml-->
+    <string name="title_activity_taskdetails">任务详情</string>
+    <string name="check_code_text">检查编号：</string>
+    <string name="tunnel_name_text">隧道名称：</string>
+    <string name="section_name_text">路线名称：</string>
+    <string name="check_range_text">检查范围：</string>
+    <string name="check_type_text">检查类型：</string>
+    <string name="check_date_text">检查日期：</string>
+    <string name="check_weather_text">天气：</string>
+    <string name="check_staff_text">检查人：</string>
+    <string name="enter_staff_text">录入人：</string>
+    <string name="organize_text">养护机构：</string>
+
+    <!-- activity_tunneldetails.xml-->
+    <string name="title_activity_tunneldetails">隧道详情</string>
+    <string name="tunnel_name">隧道名称：</string>
+    <string name="tunnel_code">隧道编码：</string>
+    <string name="tunnel_road">路段名称：</string>
+    <string name="tunnel_length">隧道长度：</string>
+    <string name="tunnel_start">开始里程：</string>
+    <string name="tunnel_end">结束里程：</string>
+    <string name="tunnel_width">隧道宽度：</string>
+    <string name="tunnel_heigth">隧道高度：</string>
+    <string name="tunnel_createdate">创建日期：</string>
+    <string name="tunnel_enddate">结束日期：</string>
+    <string name="tunnel_completiondate">完成日期：</string>
+    <string name="tunnel_remarks">备注：</string>
+    <!-- activity_check.xml-->
+    <string name="check_list">结构列表</string>
+    <string name="check_record_table">检查记录单</string>
+
+    <!-- hidecheck_main.xml -->
+    <string name="hideCheckTitle">安全隐患排查配置</string>
+    <string name="checkProject">检查工程</string>
+    <string name="checkForm">安全隐患排查记录单</string>
+
+    <!-- hidecheck_add_dialog.xml -->
+    <string name="checkProjectName">检查名称:</string>
+    <string name="tunnelName">隧道名称:</string>
+    <string name="managerUnit">管理单位:</string>
+    <string name="mileage">开始桩号:</string>
+    <string name="mileageend">结束桩号:</string>
+    <string name="checkPerson">检查人员:</string>
+    <string name="checkDate">检查日期:</string>
+    <!-- hidecheck_device.xml -->
+    <string name="deviceTitle">安排隐患设备排查</string>
+
+    <!-- hidecheck_add_device_dialog.xml -->
+    <string name="projectName">项目名称:</string>
+    <string  name="section">施工标段:</string>
+    <string name="unitName">单位名称:</string>
+    <!-- dialog_relatedtask.xml -->
+    <string name="relatedTask">请选择关联的任务</string>
+
+    <string  name="versionTitle">版本更新提示</string>
+    <string name="versionState">已经是最新版本</string>
+    <string  name="versionContent">您有新的版本信息,是否要立即更新?</string>
+    <!-- dactivity_add_damage.xml -->
+    <string  name="check_dis_content">检查内容：</string>
+    <string  name="check_dis_type">病害类型：</string>
+    <string  name="check_dis_mileage">营运桩号：</string>
+    <string  name="check_dis_mileage_j">局部桩号：</string>
+    <string  name="check_dis_mileage_import">距进口：</string>
+    <string  name="check_dis_mileage_export">距出口：</string>
+    <string  name="check_dis_postion">缺损位置：</string>
+    <string  name="check_dis_judge">标       度：</string>
+    <string  name="check_dis_step">养护措施：</string>
+    <string  name="check_dis_desc">异常描述：</string>
+    <string  name="check_dis_disdesc">病害描述：</string>
+    <string  name="check_dis_remark">备       注：</string>
+    <string  name="check_dis_checkway">检查方式：</string>
+    <string  name="check_dis_date">检查日期：</string>
+    <string  name="check_dis_checker">检查人员：</string>
+
+    <!-- dactivity_machine_add_damage.xml -->
+    <string name="machine_check_content">检修内容：</string>
+    <string  name="machine_check_desc">内容描述：</string>
+    <string  name="machine_check_step">养护措施：</string>
+    <string  name="machine_check_judge">判定：</string>
+    <string  name="machine_check_remark">备注：</string>
+    <string  name="machine_check_isuse">是/否使用：</string>
+</resources>
